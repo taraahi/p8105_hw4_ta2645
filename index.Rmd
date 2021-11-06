@@ -5,6 +5,7 @@ output:
     code_folding: hide
     toc: true
     toc_float: true
+  theme: cerulean
 ---
 
 # Welcome!
@@ -14,3 +15,6 @@ output:
 My name is Tara and I'm a second-year MPH student at Columbia in the Epidemiology department with a certificate in Comparative Effectiveness Outcomes Research. One of my favorite classes is Data Science I, where I'm learning to make my own websites, which brings you to this landing page. I spend most of my time doing homework and Googling R tools or reading the course website, linked [here](p8105.com). In the precious little spare time I have, I enjoy traveling to new places, reading political biographies, and playing tennis.
 
 I hope you are able to find some interesting information navigating these pages. If you would like to reach out, my contact information is provided. 
+
+### Link to About Me page
+[About me](about.html)

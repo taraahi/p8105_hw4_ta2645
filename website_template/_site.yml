@@ -1,0 +1,21 @@
+name: "Tara Ahi"
+output_dir: "."
+navbar:
+  title: "Home"
+  href: index.html
+  right:
+    - text: "About Me"
+      href: about.html
+      text: "Contact Information"
+      href: contact.html
+    - text: "GitHub"
+      icon: fa-github fa-lg
+      href: http://github.com/taraahi/
+      text: "Email"
+      icon: fa-envelope fa-lg
+      href: mailto:<tara.ahi@columbia.edu>
+      text: "LinkedIn"
+      href: http://linkedin.com/in/tara-ahi
+output:
+  html_document:
+  theme: cerulean

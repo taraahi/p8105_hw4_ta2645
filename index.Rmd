@@ -16,5 +16,8 @@ My name is Tara and I'm a second-year MPH student at Columbia in the Epidemiolog
 
 I hope you are able to find some interesting information navigating these pages. If you would like to reach out, my contact information is provided. 
 
+
+
+
 ### Link to About Me page
 [About me](about.html)

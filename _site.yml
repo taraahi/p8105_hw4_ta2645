@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Plotly"
+      href: plotly.html
     - icon: fa-envelope fa-lg
       href: mailto:<tara.ahi@columbia.edu>
     - icon: fa-github fa-lg
@@ -14,4 +16,4 @@ navbar:
       href: http://linkedin.com/in/tara-ahi
 output:
   html_document:
-    theme: cerulean
+    theme: journal

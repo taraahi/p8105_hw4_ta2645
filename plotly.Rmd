@@ -1,0 +1,70 @@
+---
+title: "Plotly"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+  theme: journal
+---
+
+# My three plots
+
+I am looking at Instacart data.
+
+```{r}
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+## Subset of Instacart Data
+
+```{r}
+data("instacart")
+```
+
+```{r}
+instacart_subset = 
+instacart %>% 
+  mutate(mean_hour = mean(order_hour_of_day)) %>%
+  select(product_name, order_dow, order_hour_of_day, aisle, department, mean_hour) %>% 
+  mutate(
+    order_dow = 
+      recode_factor(order_dow, "0" = "Monday", "1" = "Tuesday", "2" = "Wednesday", "3" = "Thursday", "4" = "Friday", "5" = "Saturday", "6" = "Sunday"))
+```
+
+
+#### Chart 1
+
+```{r}
+instacart_subset %>% 
+  filter(
+    department == "produce"
+  ) %>% 
+  count(product_name) %>% 
+  plot_ly(
+    x = ~product_name, y = ~n, type = "scatter", mode = "markers")
+```
+
+This shows the number of each item in the produce department.
+
+#### Chart 2
+
+```{r}
+instacart_subset %>% 
+  plot_ly(y = ~department, color = ~order_dow, type = "box", colors = "viridis")
+```
+
+This is also a suspiciously uniform plot... I'm guessing it reflects something about how the data is input from user activity. 
+
+
+#### Chart 3
+
+```{r}
+instacart_subset %>% 
+  count(aisle) %>% 
+  filter(n > 20000) %>% 
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis")
+```
+
+This shows the count of products sold in each aisle among those with over 20,000 products sold. 

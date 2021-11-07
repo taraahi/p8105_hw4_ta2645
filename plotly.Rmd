@@ -34,7 +34,7 @@ instacart %>%
 ```
 
 
-#### Chart 1
+#### Chart 1 - Scatterplot
 
 ```{r}
 instacart_subset %>% 
@@ -48,7 +48,7 @@ instacart_subset %>%
 
 This shows the number of each item in the produce department.
 
-#### Chart 2
+#### Chart 2 - Box plot
 
 ```{r}
 instacart_subset %>% 
@@ -58,7 +58,7 @@ instacart_subset %>%
 This is also a suspiciously uniform plot... I'm guessing it reflects something about how the data is input from user activity. 
 
 
-#### Chart 3
+#### Chart 3 - Bar graph
 
 ```{r}
 instacart_subset %>% 

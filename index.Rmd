@@ -20,4 +20,4 @@ I hope you are able to find some interesting information navigating these pages.
 
 
 ### Link to About Me page
-[About me](about.html)
+[About me](About.html)
